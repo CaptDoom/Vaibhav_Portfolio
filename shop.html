@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanora Shop</title>
+  <link rel="stylesheet" href="shop.css">
+  <style>
+    /* Add styles for the background video */
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Keeps the video behind the content */
+    }
+
+    /* Ensure the body and html fill the screen */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Optional: Make content sections stand out over the video */
+    .navbar, .shop, footer {
+      position: relative;
+      z-index: 1; /* Makes sure content stays on top of the video */
+    }
+
+    /* Style for Airtable Integration Section */
+    .airtable-section {
+      position: relative;
+      z-index: 1;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .airtable-embed {
+      width: 100%;
+      height: 533px;
+      border: 1px solid #ccc;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video class="background-video" autoplay muted loop>
+    <source src="sanora.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo"><a>SANORA</a></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#about-contact">About</a></li>
+      <li><a href="../index.html#about-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Shop Section -->
+  <section class="shop">
+    <h1>Shop Our Collection</h1>
+    <div class="products">
+      <div class="product-card">
+        <img src="WhatsApp Image 2024-11-23 at 00.16.58_e92f7622.jpg" alt="Sanora Classic Band">
+        <h2>Sanora Classic Band</h2>
+        <p>Elegant and durable, the perfect safety companion.</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="WhatsApp Image 2024-11-23 at 00.17.44_661cbfd9.jpg" alt="Sanora Glow Bracelet">
+        <h2>Sanora Glow Bracelet</h2>
+        <p>Shining protection with a sleek design.</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="WhatsApp Image 2024-11-23 at 00.17.44_8f3c131d.jpg" alt="Sanora Aura Pendant">
+        <h2>Sanora Aura Pendant</h2>
+        <p>Charm and protection in one stylish piece.</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="WhatsApp Image 2024-11-23 at 00.17.45_0c1df3ac.jpg" alt="Sanora Aura Pendant">
+        <h2>Sanora Aura Pendant</h2>
+        <p>Charm and protection in one stylish piece.</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Airtable Integration Section -->
+  <section class="airtable-section">
+    <iframe class="airtable-embed" src="https://airtable.com/embed/appeuVytvkafGCKMT/pagP2QE0YKWpM3toC/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sanora. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
