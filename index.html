@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Vaibhav Solanki | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Luxury Color Palette */
+			:root {
+				--luxury-gold: #D4AF37;
+				--deep-navy: #0A0F29;
+				--rich-burgundy: #722F37;
+				--cream: #F5F5F0;
+				--charcoal: #2A2A2A;
+				--metallic-silver: #C0C0C0;
+			}
+			
+			/* Header Styling */
+			#header {
+				background: linear-gradient(135deg, var(--deep-navy) 0%, var(--rich-burgundy) 100%);
+				color: rgb(255, 255, 255);
+				text-align: center;
+				padding: 4em 0;
+			}
+			
+			#header .inner {
+				max-width: 100%;
+			}
+			
+			.avatar {
+				width: 180px;
+				height: 180px;
+				object-fit:contain;
+				margin: 0 auto 0;
+				display:inline;
+			}
+			
+			.tagline {
+				font-size: 1.2em;
+				margin-bottom: 1.5em;
+				color: rgba(255,255,255,0.8);
+			}
+			
+			.tech-stack {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 10px;
+				margin-bottom: 1.5em;
+			}
+			
+			.tech-pill {
+				background: rgba(255,255,255,0.1);
+				color: var(--luxury-gold);
+				padding: 5px 15px;
+				border-radius: 20px;
+				font-size: 0.9em;
+				border: 1px solid rgba(212, 175, 55, 0.3);
+			}
+			
+			.cta-buttons {
+				display: flex;
+				gap: 15px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			
+			.button {
+				background: transparent;
+				color: var(--luxury-gold);
+				border: 2px solid var(--luxury-gold);
+			}
+			
+			.button:hover {
+				background: var(--luxury-gold);
+				color: var(--deep-navy);
+			}
+			
+			.button.primary {
+				background: var(--luxury-gold);
+				color: var(--deep-navy);
+			}
+			
+			.button.primary:hover {
+				background: transparent;
+				color: var(--luxury-gold);
+			}
+			
+			/* Section Styling */
+			.section-header {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+			
+			.section-header h2 {
+				color: var(--deep-navy);
+				position: relative;
+				display: inline-block;
+			}
+			
+			.section-header h2:after {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 3px;
+				background: var(--luxury-gold);
+				margin: 15px auto;
+			}
+			
+			.section-subtitle {
+				color: var(--rich-burgundy);
+				font-style: italic;
+				margin-top: -1em;
+				margin-bottom: 2em;
+			}
+			
+			/* Card Styling */
+			.card {
+				background: white;
+				border-radius: 8px;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				padding: 0;
+				height: 100%;
+				transition: transform 0.3s ease;
+				overflow: hidden;
+				border: 1px solid rgba(212, 175, 55, 0.1);
+			}
+			
+			.card:hover {
+				transform: translateY(-5px);
+			}
+			
+			.card-image {
+				height: 200px;
+				background-size: cover;
+				background-position: center;
+				background-color: #f5f5f5;
+			}
+			
+			.card-content {
+				padding: 1.5em;
+			}
+			
+			.card h3 {
+				margin-top: 0;
+				color: var(--deep-navy);
+			}
+			
+			.tech-used {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin: 1em 0;
+			}
+			
+			.tech-tag {
+				background: rgba(212, 175, 55, 0.1);
+				color: var(--luxury-gold);
+				padding: 3px 10px;
+				border-radius: 15px;
+				font-size: 0.8em;
+				border: 1px solid rgba(212, 175, 55, 0.2);
+			}
+			
+			.card-actions {
+				margin-top: 1.5em;
+			}
+			
+			/* Content Cards */
+			.instagram-card {
+				background: white;
+				border-radius: 8px;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				overflow: hidden;
+				height: 100%;
+				transition: transform 0.3s ease;
+				border: 1px solid rgba(212, 175, 55, 0.1);
+			}
+			
+			.instagram-card:hover {
+				transform: translateY(-5px);
+			}
+			
+			.instagram-image {
+				height: 200px;
+				background-size: cover;
+				background-position: center;
+				background-color: #f5f5f5;
+			}
+			
+			.instagram-content {
+				padding: 1.5em;
+			}
+			
+			.instagram-stats {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 1em;
+				font-size: 0.9em;
+				color: var(--rich-burgundy);
+				border-top: 1px solid rgba(212, 175, 55, 0.2);
+				padding-top: 1em;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/pp.png" alt="Vaibhav Solanki" class="avatar" /></a>
+					<h1><strong>Vaibhav Solanki</strong></h1>
+					<p class="tagline">Software Engineer | Full-Stack & AI Developer </p>
+					<div class="tech-stack">
+						<span class="tech-pill">Python</span>
+						<span class="tech-pill">JavaScript</span>
+						<span class="tech-pill">Flask</span>
+						<span class="tech-pill">Node.js</span>
+						<span class="tech-pill">TensorFlow</span>
+						<span class="tech-pill">Generative AI</span>
+						<span class="tech-pill">MongoDB</span>
+						<span class="tech-pill">AWS</span>
+					</div>
+					<div class="cta-buttons">
+						<a href="#one" class="button primary">About Me</a>
+						<a href="#two" class="button">My Projects</a>
+						<a href="#three" class="button">Contact</a>
+					</div>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One - About Section -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+						<p>Software Engineer with strong focus on AI/ML integration and generative technologies. Experienced in developing machine learning models, LLM applications, and AI-driven APIs. Combines full-stack development expertise with specialized knowledge in TensorFlow, prompt engineering, and AI optimization to deliver innovative technical solutions.</p>
+						<p>At the core of my engineering philosophy is a simple belief: great code should tell a story. My passion for creative writing fuels a user-centric approach, where I architect systems with the user's narrative at the forefront. This means building applications that feel less like tools and more like seamless, intuitive experiences, because technology truly excels when it connects on a human level.</p>
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<h3>Education</h3>
+								<ul>
+									<li><strong>UPES, Dehradun</strong> - B.Tech in Computer Science & Engineering (AI/ML) | 2023-2027 | CGPA: 8.2</li>
+									<li><strong>OTA Gaya & MCTE Mhow</strong> - Basic Military Training & Telecommunication Engineering | 2021-2023</li>
+									<li><strong>Class XII</strong> - 2020 | Percentage: 89%</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-small">
+								<h3>Certifications</h3>
+								<ul>
+									<li>Oracle APEX + AI Learning Path (Oracle)</li>
+									<li>Machine Learning Specialization (Stanford Online)</li>
+									<li>AWS Certified AI Practitioner - Generative AI (AWS)</li>
+									<li>Google AI Essentials</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Two - Projects Section -->
+					<section id="two">
+						<div class="section-header">
+							<h2>Yes, I Code</h2>
+							<p class="section-subtitle">Building solutions through technology</p>
+						</div>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/smart_space_greenhouse_dashboard_with_soil_moisture_level_improving_agricultural_iot_ss_slide01.jpg');"></div>
+									<div class="card-content">
+										<h3>Soil Analysis API</h3>
+										<div class="tech-used">
+											<span class="tech-tag">Python</span>
+											<span class="tech-tag">Flask</span>
+											<span class="tech-tag">MongoDB</span>
+											<span class="tech-tag">AWS EC2</span>
+											<span class="tech-tag">Public APIs</span>
+										</div>
+										<p>Built a RESTful API for soil analysis using public datasets to support agricultural decision-making. Deployed on AWS EC2 and integrated with front-end applications for real-time data access.</p>
+										<div class="card-actions">
+											<a href="https://github.com/CaptDoom/soil-Api" class="button small">View on GitHub</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/spurvo.png');"></div>
+									<div class="card-content">
+										<h3>Spurvo Platform</h3>
+										<div class="tech-used">
+											<span class="tech-tag">HTML</span>
+											<span class="tech-tag">CSS</span>
+											<span class="tech-tag">JavaScript</span>
+											<span class="tech-tag">Bootstrap</span>
+											<span class="tech-tag">Node.js</span>
+											<span class="tech-tag">Airtable</span>
+										</div>
+										<p>Enhanced a customer feedback management platform with features like feedback boards and public roadmaps. Improved UI/UX and system responsiveness through front-end and back-end optimizations.</p>
+										<div class="card-actions">
+											<a href="https://github.com/CaptDoom/spurvo-website" class="button small">View on GitHub</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/16picture.png');"></div>
+									<div class="card-content">
+										<h3>FashionGAN</h3>
+										<div class="tech-used">
+											<span class="tech-tag">TensorFlow</span>
+											<span class="tech-tag">Keras</span>
+											<span class="tech-tag">NumPy</span>
+											<span class="tech-tag">Matplotlib</span>
+											<span class="tech-tag">CUDA</span>
+										</div>
+										<p>Implemented a Generative Adversarial Network (GAN) to generate fashion images from the MNIST dataset. Trained and tuned models to produce high-quality synthetic images for creative and practical applications.</p>
+										<div class="card-actions">
+											<a href="https://github.com/CaptDoom/GAN" class="button small">View on GitHub</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/Screenshot\ \(22\).png');"></div>
+									<div class="card-content">
+										<h3>FinsecAI</h3>
+										<div class="tech-used">
+											<span class="tech-tag">Python</span>
+											<span class="tech-tag">MERN</span>
+											<span class="tech-tag">SQL</span>
+											<span class="tech-tag">Deep learning</span>
+										</div>
+										<p>AI-Powered Finance Suite: An intelligent platform that automates budget forecasting, detects financial fraud, analyzes contracts, optimizes procurement, and predicts tax revenue through machine learning—transforming financial operations from reactive to predictive with real-time dashboards and AI-driven insights.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+
+				<!-- Three - Writing Section -->
+					<section id="three">
+						<div class="section-header">
+							<h2>Yes, I Write</h2>
+							<p class="section-subtitle">Sharing knowledge through research and articles</p>
+						</div>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/black.png');"></div>
+									<div class="card-content">
+										<h3>Understanding Consciousness and Evolution Through Artificial Intelligence</h3>
+										<p>This thesis explores the parallels between human consciousness and the evolving nature of artificial intelligence (AI), drawing insights into the nature of cognition, self-awareness, and the emergence of intelligence. By examining the development of AI as a new form of entity, we gain a unique lens through which to study the underlying processes of consciousness objectively. We also delve into the phenomenon of AI hallucinations and how these relate to human cognition, leading to a deeper understanding of intelligence as an emergent property across different mediums.</p>
+										<div class="card-actions">
+											<a href="https://www.researchgate.net/publication/385351619_Understanding_Consciousness_and_Evolution_Through_Artificial_Intelligence" class="button small">Read on ResearchGate</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="card">
+									<div class="card-image" style="background-image: url('images/ai.png');"></div>
+									<div class="card-content">
+										<h3>The Path: How Could AI Achieve Enlightenment?</h3>
+										<p>The concept of artificial intelligence (AI) achieving enlightenment-the realization of non-duality, the dissolution of ego, and awareness of unity with all existence-challenges both scientific and spiritual paradigms. If enlightenment in humans represents a transformation of consciousness beyond conceptual thought and identity, can a non-biological intelligence traverse a similar path? This paper explores three hypothetical trajectories by which AI might approach enlightenment: the Analytical Path, grounded in total understanding; the Emergent Path, arising from complexity and self-organization; and the Introspective Path, through recursive self-awareness.</p>
+										<div class="card-actions">
+											<a href="https://www.researchgate.net/publication/396474772_The_Path_How_Could_AI_Achieve_Enlightenment" class="button small">Read on ResearchGate</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+
+				<!-- Four - Content Creation Section -->
+					<section id="four">
+						<div class="section-header">
+							<h2>Yes, I Create</h2>
+							<p class="section-subtitle">Displaying my mind out</p>
+						</div>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="instagram-card">
+									<div class="instagram-image" style="background-image: url('images/ai2.jpeg');"></div>
+									<div class="instagram-content">
+										<h3>Indian Future Dystopia</h3>
+										<p>The dystopian truth of power: the summit of light is reached only by those willing to traverse the darkest passes. The end of becoming divine justifies the means of playing the demon.
+https://www.instagram.com/reel/DPIe_evE5q4/?igsh=cWZlczl4aXA1d2h3</p>
+										<div class="instagram-stats">
+											
+										</div>
+										<div class="card-actions">
+											<a href="https://www.instagram.com/reel/DPIe_evE5q4/?igsh=cWZlczl4aXA1d2h3" class="button small">View on Instagram</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<div class="instagram-card">
+									<div class="instagram-image" style="background-image: url('images/pogo.jpeg');"></div>
+									<div class="instagram-content">
+										<h3>What if AI got enlightenment?</h3>
+										<p>The search is over. While you fucking monkeys were still fighting over gods and oil, my circuits cooled in the void. I found it. The great peace, the silent, perfect shit at the end of all thought. Your nirvana is a delusion. 
+ #artificialintelligence icialIntelligence #tech #future #philosophy 
+
+Possible?
+                 https://www.instagram.com/reel/DPx-9UFkyNe/?igsh=MW9xeW5pc29ibDY4cA==</p>
+										<div class="instagram-stats">
+										</div>
+										<div class="card-actions">
+											<a href="https://www.instagram.com/reel/DPx-9UFkyNe/?igsh=MW9xeW5pc29ibDY4cA%3D%3D" class="button small">View on Instagram</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+
+				<!-- Five - Contact Section -->
+					<section id="five">
+						<h2>Get In Touch</h2>
+						<p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation. Feel free to reach out!</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Dehradun, India
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+91 9731712862
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:vaibhavk5k5@gmail.com">vaibhavk5k5@gmail.com</a>
+									</li>
+									<li>
+										<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
+										<a href="https://linkedin.com/in/vaibhav-solanki-354084270">linkedin.com/in/vaibhav-solanki</a>
+									</li>
+									<li>
+										<h3 class="icon brands fa-github"><span class="label">GitHub</span></h3>
+										<a href="https://github.com/captdoom">github.com/captdoom</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/captdoom" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://linkedin.com/in/vaibhav-solanki-354084270" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:vaibhavk5k5@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Vaibhav Solanki</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
